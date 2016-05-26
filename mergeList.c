@@ -71,5 +71,9 @@ int main(void) {
 
 	node *pHead = merge(pHead1, pHead2);
 	printf("%d\n", pHead->pNext->data);
+	free(pHead1);
+	pHead1 = NULL;
+	free(pHead2);
+	pHead2 = NULL;
 	return 0;
 }
